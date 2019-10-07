@@ -24,7 +24,5 @@ class PostsController < ApplicationController
     params.permit(:category, :content, :title)
   end
 
-  def set_post!
-    @post = Post.find(params[:id])
-  end
+
 end
